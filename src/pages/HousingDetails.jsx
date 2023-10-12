@@ -1,4 +1,4 @@
-import styles from './housingDetails.module.scss';
+import styles from "../styles/pages/_HousingDetails.module.scss"
 import React from 'react';
 
 const HousingDetails = () => {
@@ -7,6 +7,6 @@ const HousingDetails = () => {
             Housing Details
         </div>
     );
-};
+}
 
 export default HousingDetails;

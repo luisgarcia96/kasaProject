@@ -1,0 +1,21 @@
+//Vendors folder
+@use "./vendors/normalize";
+
+//Base folder
+@use "./base/typography";
+
+//Layout folder
+@use "./layouts/header";
+@use "./layouts/footer";
+
+//Components folder
+// @use "./components/loader";
+// @use "./components/restaurant-cards";
+// @use "./components/plate-cards";
+// @use "./components/buttons";
+
+//Pages folder
+@use "./pages/Home.module.scss";
+@use "./pages/About.module.scss";
+@use "./pages/HousingDetails.module.scss";
+@use "./pages/NotFound.module.scss";

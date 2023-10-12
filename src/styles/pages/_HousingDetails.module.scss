@@ -1,0 +1,5 @@
+@use "../abstracts" as a;
+
+.housingDetails {
+    color: a.$color-primary;
+}
