@@ -1,0 +1,9 @@
+@use "./variables" as v;
+
+@mixin bg-gradient {
+	background: linear-gradient(
+		180deg,
+		v.$color-primary 0%,
+		v.$color-black 100%
+	);
+}
