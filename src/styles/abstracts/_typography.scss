@@ -1,19 +1,19 @@
 //Font families
-$ff-title: "Shrikhand", sans-serif;
-$ff-text: "Roboto", sans-serif;
+$ff-standard: "Monserrat", sans-serif;
 
 //Font sizes
-$fs-x-sm: 1rem;
-$fs-sm: 1.125rem;
-$fs-sm-md: 1.2rem;
-$fs-md: 1.5rem;
-$fs-md-lg: 1.75rem;
-$fs-lg: 2rem;
+$fs-x-sm: 0.75rem;
+$fs-sm: 0.8125rem;
+$fs-sm-md: 0.875rem;
+$fs-md: 1.125rem;
+$fs-md-lg: 1.5rem;
+$fs-lg: 6rem;
+$fs-x-lg: 18rem;
 
 //Font weights
-$fw-light: 300;
-$fw-normal: 400;
+$fw-light: 400;
+$fw-normal: 500;
 $fw-bold: 700;
 
-//Font styles
-$fs-italic: italic;
+//Line heights
+$lh-standard: 142.6%;
