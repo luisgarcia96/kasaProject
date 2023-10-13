@@ -5,8 +5,8 @@
 @use "./base/typography";
 
 //Layout folder
-@use "./layouts/header";
-@use "./layouts/footer";
+@use "./layouts/Header.module.scss";
+@use "./layouts/Footer.module.scss";
 
 //Components folder
 // @use "./components/loader";

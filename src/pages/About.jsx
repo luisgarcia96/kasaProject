@@ -1,4 +1,4 @@
-import styles from '../styles/pages/_About.module.scss'
+import styles from '../styles/pages/About.module.scss'
 import React from 'react';
 
 const About = () => {

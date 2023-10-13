@@ -1,4 +1,4 @@
-import styles from "../styles/pages/_HousingDetails.module.scss"
+import styles from "../styles/pages/HousingDetails.module.scss"
 import React from 'react';
 
 const HousingDetails = () => {

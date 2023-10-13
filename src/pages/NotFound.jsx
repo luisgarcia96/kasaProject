@@ -1,4 +1,4 @@
-import styles from '../styles/pages/_NotFound.module.scss'
+import styles from '../styles/pages/NotFound.module.scss'
 import React from 'react';
 
 const NotFound = () => {
