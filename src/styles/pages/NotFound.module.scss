@@ -1,6 +1,37 @@
 @use "../abstracts" as a;
 
 .notFound {
-	margin: 0 auto;
+	margin: auto;
 	max-width: 77.5rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+
+	.number {
+		color: a.$color-primary;
+		font-size: a.$fs-xx-lg;
+		line-height: a.$lh-standard;
+		font-weight: a.$fw-bold;
+		margin: 0;
+	}
+
+	.message {
+		color: a.$color-primary;
+		font-size: a.$fs-lg;
+		line-height: a.$lh-standard;
+		font-weight: a.$fw-normal;
+		margin: 0;
+	}
+
+	.goBack {
+		color: a.$color-primary;
+		font-size: a.$fs-md;
+		line-height: a.$lh-standard;
+		font-weight: a.$fw-normal;
+		text-align: center;
+		margin: 0;
+		text-decoration: underline;
+		cursor: pointer;
+	}
 }
