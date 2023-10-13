@@ -19,3 +19,8 @@
 @use "./pages/About.module.scss";
 @use "./pages/HousingDetails.module.scss";
 @use "./pages/NotFound.module.scss";
+
+.App {
+    max-width: 77.5rem;
+    margin: 0 auto;
+}

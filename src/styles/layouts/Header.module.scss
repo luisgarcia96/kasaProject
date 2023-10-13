@@ -1,4 +1,39 @@
 @use "../abstracts" as a;
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+
+  .logoContainer {
+    
+  }
+
+  .navContainer {
+    display: flex;
+    align-items: center;
+
+    .navLinkList {
+      display: flex;
+      gap: 3.5625rem;
+      padding: 0;
+
+      .navLink {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+          text-decoration: none;
+          font-size: a.$fs-md-lg;
+          color: a.$color-primary;
+          line-height: a.$lh-standard;
+
+          &.activeLink {
+            border-bottom: 2px solid a.$color-primary; // Add a bottom border to the active link
+          }
+        }
+      }
+    }
+  }
 }
