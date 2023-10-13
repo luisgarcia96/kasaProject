@@ -1,5 +1,6 @@
 @use "../abstracts" as a;
 
 .about {
-    color: a.$color-primary;
+	margin: 0 auto;
+	max-width: 77.5rem;
 }
