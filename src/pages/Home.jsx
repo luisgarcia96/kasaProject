@@ -1,25 +1,41 @@
 import styles from "../styles/pages/Home.module.scss";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
+import mockedData from "../mocks/kasaBddMock.json";
+import { useNavigate } from "react-router-dom";
+
 
 const Home = () => {
-	return (
-		<div className={styles.home}>
-			<div className={styles.titleContainer}>
-				<h1>Chez vous, partout et ailleurs</h1>
-			</div>
-			<div className={styles.mainContainer}>
-				{[0, 1, 2, 3, 4, 5].map((card, index) => (
-					<Card
-						key={`card-${index}`}
-						title="Titre de la location"
-						image="https://picsum.photos/200/300"
-						description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quae."
-					/>
-				))}
-			</div>
-		</div>
-	);
+    const [cardList, setCardList] = useState([]);
+    const navigate = useNavigate();
+
+
+    const handleClickedCard = (card) => {
+        const { id } = card;
+        navigate(`/housing/${id}`);
+    };
+
+    //Set cardList from MockedAPI
+    useEffect(() => {
+        setCardList(mockedData);
+    }, []);
+
+    return (
+        <div className={styles.home}>
+            <div className={styles.titleContainer}>
+                <h1>Chez vous, partout et ailleurs</h1>
+            </div>
+            <div className={styles.mainContainer}>
+                {cardList.map((card, index) => (
+                    <Card
+                        key={`card-${index}`}
+                        title={card.title}
+                        onClick={() => handleClickedCard(card)}
+                    />
+                ))}
+            </div>
+        </div>
+    );
 };
 
 export default Home;
