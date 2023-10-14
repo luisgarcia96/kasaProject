@@ -15,8 +15,9 @@ const HousingDetails = () => {
 		setHousing(foundHousing);
 	}, [id]);
 
-    if (!housing) return null;
+    console.log('housing', housing);
 
+    if (!housing) return null;
 	return (
 		<main className={styles.housingDetails}>
 			<Carousel images={housing?.pictures} />

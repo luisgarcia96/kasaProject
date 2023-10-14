@@ -28,9 +28,14 @@
 					font-size: a.$fs-md-lg;
 					color: a.$color-primary;
 					line-height: a.$lh-standard;
+					transition: all 0.05s ease-in-out;
+
+					&:hover {
+						border-bottom: 2px solid a.$color-primary;
+					}
 
 					&.activeLink {
-						border-bottom: 2px solid a.$color-primary; // Add a bottom border to the active link
+						border-bottom: 2px solid a.$color-primary;
 					}
 				}
 			}

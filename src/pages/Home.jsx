@@ -1,6 +1,6 @@
 import styles from "../styles/pages/Home.module.scss";
 import React, { useEffect, useState } from "react";
-import Card from "../components/Card";
+import HomeCard from "../components/HomeCard";
 import mockedData from "../mocks/kasaBddMock.json";
 import { useNavigate } from "react-router-dom";
 
@@ -27,7 +27,7 @@ const Home = () => {
             </div>
             <div className={styles.mainContainer}>
                 {cardList.map((card, index) => (
-                    <Card
+                    <HomeCard
                         key={`card-${index}`}
                         title={card.title}
                         onClick={() => handleClickedCard(card)}
