@@ -4,7 +4,7 @@ import React from "react";
 
 const NotFound = () => {
 	return (
-		<div className={styles.notFound}>
+		<main className={styles.notFound}>
 			<p className={styles.number}>404</p>
 			<p className={styles.message}>
 				Oups! La page que vous demandez n'existe pas.
@@ -12,7 +12,7 @@ const NotFound = () => {
 			<Link className={styles.goBack} to="/">
 				Retourner sur la page d'accueil
 			</Link>
-		</div>
+		</main>
 	);
 };
 

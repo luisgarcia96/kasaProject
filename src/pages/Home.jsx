@@ -21,7 +21,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className={styles.home}>
+        <main className={styles.home}>
             <div className={styles.titleContainer}>
                 <h1>Chez vous, partout et ailleurs</h1>
             </div>
@@ -34,7 +34,7 @@ const Home = () => {
                     />
                 ))}
             </div>
-        </div>
+        </main>
     );
 };
 
