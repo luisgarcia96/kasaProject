@@ -1,0 +1,16 @@
+@use "../abstracts" as a;
+
+.card {
+    @include a.bg-gradient;
+    height: 21.25rem;
+    width: 21.25rem;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .cardBody {
+        display: flex;
+        padding: 1.25rem;
+    }
+}

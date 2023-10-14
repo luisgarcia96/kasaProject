@@ -24,4 +24,14 @@
 			background-color: rgba(0, 0, 0, 0.5);
 		}
 	}
+
+	.mainContainer {
+		background-color: a.$gray-lighter;
+		border-radius: 1.5625rem;
+		margin-top: 2.7rem;
+		padding: 3.5rem 3.12rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr auto; 
+		gap: 3.75rem;
+	}
 }
