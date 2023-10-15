@@ -48,7 +48,7 @@ const HousingDetails = () => {
 				</div>
 				<div className={styles.secondaryInfo}>
 					<Accordion title={'Description'} text={housing?.description}/>
-					<Accordion title={'Description'} equipments={housing?.equipments}/>
+					<Accordion title={'Équipements'} equipments={housing?.equipments}/>
 				</div>
 			</div>
 		</main>

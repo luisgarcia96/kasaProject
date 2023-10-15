@@ -28,7 +28,11 @@ const Accordion = ({ title, text, equipments }) => {
 				</div>
 			</div>
 			<div className={`${styles.body} ${isOpen && styles.body_open} `}>
-				{text && <p className={styles.paragraph}>{text}</p>}
+				{text && (
+					<div className={styles.description}>
+						<p className={styles.paragraph}>{text}</p>
+					</div>
+				)}
 				{equipments && (
 					<ul className={styles.equipments}>
 						{equipments.map((equipment, index) => (
