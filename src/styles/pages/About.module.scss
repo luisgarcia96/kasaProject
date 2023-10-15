@@ -37,3 +37,30 @@
 		gap: 1.88rem;
 	}
 }
+
+@include a.small-screen {
+	.about {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 1.25rem;
+		min-height: calc(100vh - 20.65rem);
+
+		.titleContainer {
+			height: 6.9375rem;
+			padding: 0.75rem;
+			border-radius: 0.625rem;
+			background-size: 200% 200%;
+
+			&::before {
+				border-radius: 0.625rem;
+			}
+		}
+
+		.infoContainer {
+			width: 100%;
+			margin-top: 1.25rem;
+			padding: 0;
+			gap: 1.25rem;
+		}
+	}
+}
