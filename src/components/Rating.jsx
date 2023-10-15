@@ -6,7 +6,6 @@ import styles from "../styles/components/Rating.module.scss";
 const Rating = ({ rating }) => {
 	const totalStars = 5;
 
-	console.log("rating", rating);
 	return (
 		<div className={styles.rating}>
 			{[...Array(totalStars)].map((star, index) => (

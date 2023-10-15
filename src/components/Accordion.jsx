@@ -12,9 +12,6 @@ const Accordion = ({ title, text, equipments }) => {
 		setIsOpen(!isOpen);
 	};
 
-	console.log(text);
-	console.log(equipments);
-
 	return (
 		<div className={styles.accordion}>
 			<div className={`${styles.header} ${isOpen && styles.header_open}`}>

@@ -1,6 +1,7 @@
-import styles from "../styles/pages/NotFound.module.scss";
-import { Link } from "react-router-dom";
 import React from "react";
+import { Link } from "react-router-dom";
+
+import styles from "../styles/pages/NotFound.module.scss";
 
 const NotFound = () => {
 	return (
