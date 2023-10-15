@@ -1,6 +1,9 @@
-import styles from "../styles/components/Carousel.module.scss";
 import React, { useState } from "react";
+import PropTypes from "prop-types";
+
 import arrowIcon from "../assets/icons/icon-arrow-2.svg";
+
+import styles from "../styles/components/Carousel.module.scss";
 
 const Carousel = ({ images }) => {
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -34,10 +37,14 @@ const Carousel = ({ images }) => {
 				onClick={handleNextClick}
 				className={`${styles.arrowContainer} ${styles.arrowNext}`}
 			>
-				<img src={arrowIcon} alt="next"  />
+				<img src={arrowIcon} alt="next" />
 			</div>
 		</div>
 	);
+};
+
+Carousel.propTypes = {
+	images: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Carousel;
