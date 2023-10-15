@@ -36,3 +36,25 @@
 		cursor: pointer;
 	}
 }
+
+@include a.small-screen {
+	.notFound {
+		box-sizing: border-box;
+		width: 100%;
+		margin: 4.19rem 0;
+		padding: 0 1.25rem;
+		gap: 4.5rem;
+
+		.number {
+			font-size: a.$fs-xx-lg;
+		}
+
+		.message {
+			font-size: a.$fs-md;
+		}
+
+		.goBack {
+			font-size: a.$fs-sm;
+		}
+	}
+}
