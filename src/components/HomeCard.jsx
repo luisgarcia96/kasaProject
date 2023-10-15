@@ -1,6 +1,7 @@
-import styles from '../styles/components/Card.module.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
+
+import styles from '../styles/components/Card.module.scss';
 
 const HomeCard = ({ title , onClick }) => {
     return (

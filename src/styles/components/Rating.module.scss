@@ -1,0 +1,18 @@
+@use "../abstracts" as a;
+
+.rating {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: 2rem;
+
+	.star {
+		color: a.$gray-normal;
+		font-size: 2.5rem;
+
+		&_filled {
+			color: a.$color-primary;
+		}
+	}
+}

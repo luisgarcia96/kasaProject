@@ -3,4 +3,63 @@
 .housingDetails {
 	margin: 0 auto;
 	max-width: 77.5rem;
+
+	.infoContainer {
+		margin-top: 1.87rem;
+
+		.primaryInfo {
+			display: flex;
+			justify-content: space-between;
+
+			.leftSide {
+				display: flex;
+				flex-direction: column;
+				max-width: 80%;
+
+				.title {
+					color: a.$color-primary;
+				}
+
+				.location {
+					color: a.$color-primary;
+					font-size: a.$fs-md;
+					font-weight: a.$fw-normal;
+					line-height: a.$lh-standard;
+					margin: 0;
+				}
+			}
+
+			.rightSide {
+				display: flex;
+				flex-direction: column;
+
+				.ownerInfo {
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+
+					.ownerName {
+						color: a.$color-primary;
+						font-size: a.$fs-md;
+						font-weight: a.$fw-normal;
+						line-height: a.$lh-standard;
+						margin: 0;
+						text-align: right;
+						//The text must use two lines always
+						white-space: pre-wrap;
+					}
+
+					.ownerImg {
+						width: 4rem;
+						height: 4rem;
+						border-radius: 50%;
+						margin-left: 0.75rem;
+					}
+				}
+			}
+		}
+
+		.secondaryInfo {
+		}
+	}
 }

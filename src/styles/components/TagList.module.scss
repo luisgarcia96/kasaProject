@@ -1,0 +1,19 @@
+@use "../abstracts" as a;
+
+.tagList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.45rem;
+    gap: 0.52rem;
+
+    .tag {
+        background-color: a.$color-primary;
+        border-radius: 0.25rem;
+        color: a.$color-white;
+        font-size: a.$fs-sm-md;
+        font-weight: a.$fw-normal;
+        line-height: a.$lh-standard;
+        border-radius: 0.8rem;
+        padding: 0.35rem 2.5rem;
+    }
+}
