@@ -61,3 +61,23 @@
 		}
 	}
 }
+
+@include a.small-screen {
+	.accordion {
+		.header {
+			padding: 0.5rem;
+			height: 1.25rem;
+
+			.arrowContainer {
+				height: 1.5rem;
+				width: 1.5rem;
+			}
+		}
+		.body {
+
+			.paragraph {
+				font-size: a.$fs-sm;
+			}
+		}
+	}
+}

@@ -68,3 +68,58 @@
 		}
 	}
 }
+
+@include a.small-screen {
+	.housingDetails {
+		box-sizing: border-box;
+		width: 100%;
+		margin: 1.69rem 0;
+		padding: 0 1.25rem;
+		gap: 4.5rem;
+
+		.infoContainer {
+			margin-top: 1rem;
+
+			.primaryInfo {
+				flex-direction: column;
+				margin-bottom: 1rem;
+
+				.leftSide {
+					max-width: 100%;
+					margin-bottom: 1rem;
+
+					.location {
+						margin-top: 0.7rem;
+						font-size: a.$fs-sm-md;
+					}
+				}
+
+				.rightSide {
+					width: 100%;
+					flex-direction: row-reverse;
+
+					.ownerInfo {
+						width: 50%;
+
+						.ownerName {
+							font-size: a.$fs-sm-md;
+						}
+
+						.ownerImg {
+							width: 3rem;
+							height: 3rem;
+						}
+					}
+
+
+				}
+			}
+
+			.secondaryInfo {
+				display: flex;
+				flex-direction: column;
+				gap: 1.5rem;
+			}
+		}
+	}
+}

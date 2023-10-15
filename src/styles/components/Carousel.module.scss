@@ -1,47 +1,82 @@
 @use "../abstracts" as a;
 
 .carousel {
-    height: 26rem;
-    width: 100%;
-    border-radius: 1.5625rem;
-    position: relative;
+	height: 26rem;
+	width: 100%;
+	border-radius: 1.5625rem;
+	position: relative;
 
-    .arrowContainer {
-        background-color: rgba(0, 0, 0, 0.25);
-        height: 5rem;
-        width: 3rem;
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+	.arrowContainer {
+		background-color: rgba(0, 0, 0, 0.25);
+		height: 5rem;
+		width: 3rem;
+		padding: 0.5rem;
+		border-radius: 0.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
 
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-    }
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+	}
 
-    .arrowBack {
-        left: 1rem;
-    }
-    
-    .arrowNext {
-        right: 1rem;
-        
-        img {
-            transform: rotate(180deg);
-        }
-    }
+	.arrowBack {
+		left: 1rem;
+	}
 
-    .image {
-        height: 100%;
-        width: 100%;
-        border-radius: 1.5625rem;
-        object-fit: cover;
-    }
+	.arrowNext {
+		right: 1rem;
+
+		img {
+			transform: rotate(180deg);
+		}
+	}
+
+	.image {
+		height: 100%;
+		width: 100%;
+		border-radius: 1.5625rem;
+		object-fit: cover;
+	}
+}
+
+@include a.small-screen {
+	.carousel {
+		height: 16rem;
+		border-radius: 0.625rem;
+
+		.arrowContainer {
+			height: 2rem;
+			width: 1rem;
+			border-radius: 0.3125rem;
+            background-color: unset;
+
+            &:hover {
+                background-color: unset;
+            }
+
+		}
+
+		.arrowBack {
+			left: 0.2rem;
+
+            img {
+                height: 100%;
+            }
+		}
+
+		.arrowNext {
+			right: 0.2rem;
+
+            img {
+                height: 100%;
+            }
+		}
+	}
 }

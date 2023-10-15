@@ -17,3 +17,16 @@
         padding: 0.35rem 2.5rem;
     }
 }
+
+@include a.small-screen {
+    .tagList {
+        margin-top: 1rem;
+        gap: 0.5rem;
+
+        .tag {
+            font-size: 0.625rem;
+            padding: 0.35rem 1.5rem;
+            border-radius: 0.625rem;
+        }
+    }
+}

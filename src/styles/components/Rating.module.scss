@@ -16,3 +16,16 @@
 		}
 	}
 }
+
+@include a.small-screen {
+	.rating {
+		margin-top: 0;
+		width: 50%;
+		justify-content: flex-start;
+
+		.star {
+			font-size: 1.5rem;
+		}
+	}
+}
+
