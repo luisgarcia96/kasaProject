@@ -24,3 +24,14 @@ h2 {
 	margin: 0;
 	padding: 0;
 }
+
+@include a.small-screen {
+	body {
+		font-size: a.$fs-sm;
+	}
+
+	h1 {
+		font-size: a.$fs-md-lg;
+	}
+
+}

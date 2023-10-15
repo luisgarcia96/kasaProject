@@ -7,6 +7,11 @@
 	max-width: 77.5rem;
 
 	.logoContainer {
+		height: 4.25rem;
+
+		.logo {
+			height: 100%;
+		}
 	}
 
 	.navContainer {
@@ -36,6 +41,31 @@
 
 					&.activeLink {
 						border-bottom: 2px solid a.$color-primary;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include a.small-screen {
+	.header {
+		box-sizing: border-box;
+		width: 100%;
+		margin: 1rem 0;
+		padding: 0 1.25rem;
+
+		.logoContainer {
+			height: 3rem;
+		}
+
+		.navContainer {
+			.navLinkList {
+				gap: 2.5rem;
+
+				.navLink {
+					a {
+						font-size: a.$fs-sm;
 					}
 				}
 			}
