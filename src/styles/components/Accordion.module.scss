@@ -1,0 +1,55 @@
+@use "../abstracts" as a;
+
+.accordion {
+	.header {
+		background-color: a.$color-primary;
+		border-radius: 0.625rem;
+		padding: 0.62rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.arrowContainer {
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 2rem;
+			width: 2rem;
+
+			.arrow {
+				height: 100%;
+				width: 100%;
+                transition: all a.$tt-arrow-turn ease-in-out;
+
+				&_open {
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+	.body {
+		display: none;
+		background-color: a.$gray-lighter;
+		border-radius: 0rem 0rem 0.625rem 0.625rem;
+		padding: 1.25rem;
+
+		.equipments {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.paragraph {
+			margin: 0;
+			font-size: a.$fs-md;
+			line-height: a.$lh-standard;
+			font-weight: a.$fw-light;
+			color: a.$color-primary;
+		}
+
+		&_open {
+			display: block;
+		}
+	}
+}

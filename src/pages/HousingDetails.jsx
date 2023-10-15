@@ -3,10 +3,11 @@ import { useParams } from "react-router-dom";
 
 import Carousel from "../components/Carousel";
 import TagList from "../components/TagList";
+import Rating from "../components/Rating";
+import Accordion from "../components/Accordion";
 import mockedData from "../mocks/kasaBddMock.json";
 
 import styles from "../styles/pages/HousingDetails.module.scss";
-import Rating from "../components/Rating";
 
 const HousingDetails = () => {
 	const [housing, setHousing] = useState(null);
@@ -46,7 +47,8 @@ const HousingDetails = () => {
 					</div>
 				</div>
 				<div className={styles.secondaryInfo}>
-					{/* Accordion components go here */}
+					<Accordion title={'Description'} text={housing?.description}/>
+					<Accordion title={'Description'} equipments={housing?.equipments}/>
 				</div>
 			</div>
 		</main>
