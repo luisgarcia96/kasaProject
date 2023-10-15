@@ -3,6 +3,7 @@
 .notFound {
 	margin: auto;
 	max-width: 77.5rem;
+	min-height: calc(100vh - 26rem);
 	text-align: center;
 	display: flex;
 	flex-direction: column;
