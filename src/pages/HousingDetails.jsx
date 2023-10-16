@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import Carousel from "../components/Carousel";
 import TagList from "../components/TagList";
@@ -11,6 +11,7 @@ import styles from "../styles/pages/HousingDetails.module.scss";
 
 const HousingDetails = () => {
 	const [housing, setHousing] = useState(null);
+	const navigate = useNavigate();
 
 	//Get id from URL
 	const { id } = useParams();
@@ -19,7 +20,12 @@ const HousingDetails = () => {
 	useEffect(() => {
 		const foundHousing = mockedData.find((housing) => housing.id === id);
 		setHousing(foundHousing);
-	}, [id]);
+
+		// Check if housing is not found and navigate to 404
+		if (!foundHousing) {
+			navigate("/404");
+		}
+	}, [id, navigate]);
 
 	if (!housing) return null;
 	return (
@@ -47,8 +53,8 @@ const HousingDetails = () => {
 					</div>
 				</div>
 				<div className={styles.secondaryInfo}>
-					<Accordion title={'Description'} text={housing?.description}/>
-					<Accordion title={'Équipements'} equipments={housing?.equipments}/>
+					<Accordion title={"Description"} text={housing?.description} />
+					<Accordion title={"Équipements"} equipments={housing?.equipments} />
 				</div>
 			</div>
 		</main>
