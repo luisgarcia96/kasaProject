@@ -19,4 +19,8 @@ TagList.propTypes = {
 	tags: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
+TagList.defaultProps = {
+	tags: [],
+};
+
 export default TagList;

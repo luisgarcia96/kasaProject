@@ -50,4 +50,10 @@ Accordion.propTypes = {
 	equipements: PropTypes.arrayOf(PropTypes.string),
 };
 
+Accordion.defaultProps = {
+	title: "",
+	text: "",
+	equipments: [],
+};
+
 export default Accordion;

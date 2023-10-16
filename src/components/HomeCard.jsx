@@ -18,4 +18,9 @@ HomeCard.propTypes = {
 	onClick: PropTypes.func.isRequired,
 };
 
+HomeCard.defaultProps = {
+	title: "",
+	onClick: () => {},
+};
+
 export default HomeCard;
