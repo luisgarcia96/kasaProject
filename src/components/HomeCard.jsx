@@ -1,21 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 import styles from "../styles/components/HomeCard.module.scss";
 
-const HomeCard = ({ title, onClick }) => {
+const HomeCard = ({ card }) => {
+	const { id, title, cover } = card;
+
 	return (
-		<div className={styles.card} onClick={onClick}>
-			<div className={styles.cardBody}>
-				<h2>{title}</h2>
-			</div>
-		</div>
+		<Link to={`housing/${id}`} className={styles.card}>
+			<img className={styles.cover} src={cover} alt={title} />
+			<h2 className={styles.title}>{title}</h2>
+		</Link>
 	);
 };
 
 HomeCard.propTypes = {
-	title: PropTypes.string.isRequired,
-	onClick: PropTypes.func.isRequired,
+	card: PropTypes.shape({
+		id: PropTypes.string,
+		title: PropTypes.string,
+		cover: PropTypes.string,
+	}),
 };
 
 HomeCard.defaultProps = {

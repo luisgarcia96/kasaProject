@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 import HomeCard from "../components/HomeCard";
 import mockedData from "../mocks/kasaBddMock.json";
@@ -8,12 +7,6 @@ import styles from "../styles/pages/Home.module.scss";
 
 const Home = () => {
 	const [cardList, setCardList] = useState([]);
-	const navigate = useNavigate();
-
-	const handleClickedCard = (card) => {
-		const { id } = card;
-		navigate(`/housing/${id}`);
-	};
 
 	//Set cardList from MockedAPI
 	useEffect(() => {
@@ -29,8 +22,7 @@ const Home = () => {
 				{cardList.map((card, index) => (
 					<HomeCard
 						key={`card-${index}`}
-						title={card.title}
-						onClick={() => handleClickedCard(card)}
+						card={card}
 					/>
 				))}
 			</div>

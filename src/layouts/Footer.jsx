@@ -1,8 +1,9 @@
 import React from 'react';
-import styles from '../styles/layouts/Footer.module.scss';
 import { Link } from 'react-router-dom';
-//import logo
+
 import whiteLogo from '../assets/logos/logo-white.svg';
+
+import styles from '../styles/layouts/Footer.module.scss';
 
 function Footer() {
     return (

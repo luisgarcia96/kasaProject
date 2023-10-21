@@ -53,7 +53,7 @@ Accordion.propTypes = {
 Accordion.defaultProps = {
 	title: "",
 	text: "",
-	equipments: [],
+	equipments: null,
 };
 
 export default Accordion;

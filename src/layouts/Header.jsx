@@ -1,7 +1,9 @@
-import styles from "../styles/layouts/Header.module.scss";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+
 import logo from "../assets/logos/logo-normal.svg";
+
+import styles from "../styles/layouts/Header.module.scss";
 
 const Header = () => {
 	const location = useLocation();
